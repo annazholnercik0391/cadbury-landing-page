@@ -286,6 +286,7 @@ section {
   position: relative;
   display: grid;
   margin-bottom: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-max-content));
   grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 }
 
@@ -543,8 +544,24 @@ section {
   .contacts__title {
     margin: 15px 0 22.5px;
   }
+  .slider {
+    display: none;
+  }
   .slider img {
     margin-top: 60px;
     height: 70vh;
+  }
+  .recipes-slider__item img {
+    margin: 0 15px 0 15px;
+  }
+  .slider__title {
+    text-align: start;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 319.8px) {
+  .recipes-slider__item img {
+    margin: 0 20px 0 20px;
   }
 }
