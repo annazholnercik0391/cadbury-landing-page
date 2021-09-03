@@ -1,0 +1,84 @@
+html {
+  font-family: $font-main;
+  font-size: $font-size;
+}
+
+body {
+  background-color: $color-dark;
+  color: $color-light;
+  font-family: $font-main;
+  max-width: $ul;
+  overflow-x: hidden;
+}
+a {
+  color: rgb(1, 1, 1);
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-accent;
+  }
+}
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.products,
+.recipes,
+.story-content,
+.contacts {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  align-content: center;
+
+  @include lg-min {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  @include lg-md {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+
+  @include md-sm {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include sm {
+    padding-top: 55px;
+    padding-bottom: 45px;
+  }
+}
+.story__title,
+.products__title,
+.recipes__title,
+.contacts__title {
+  text-align: center;
+
+  @include lg-min {
+    margin: 0 0 45px;
+  }
+  @include lg-md {
+    margin: 0 0 37.5px;
+  }
+  @include md-sm {
+    margin: 0 0 30px;
+  }
+  @include sm {
+    margin: 15px 0 22.5px;
+  }
+}
+.products__description,
+.contacts__description {
+  text-align: center;
+
+  @include md-min {
+    margin-bottom: 45px;
+  }
+  @include md {
+    margin-bottom: 30px;
+  }
+}

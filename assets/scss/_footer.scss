@@ -1,0 +1,59 @@
+.footer {
+  font-size: 0.875rem;
+  &__top {
+    padding-top: 45px;
+    padding-bottom: $gap*2;
+    background-color: $color-light;
+  }
+  &-icons {
+    position: relative;
+    display: grid;
+    margin-bottom: $gap;
+    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+
+    & a {
+      display: block;
+      padding: $gap / 2;
+      transition: color 0.5s;
+    }
+    & .fab {
+      font-size: 1.8rem;
+      color: $color-accent;
+      &:hover {
+        color: $color-dark;
+      }
+    }
+  }
+
+  & h3 {
+    color: $color-dark;
+    &::first-letter {
+      color: $color-accent;
+    }
+  }
+  & p {
+    color: $color-dark;
+  }
+  & ul {
+    padding-left: $gap*2;
+    list-style: none;
+  }
+  & li {
+    position: relative;
+    &::before {
+      position: absolute;
+      margin-left: -30px;
+      content: "\f30b";
+      color: $color-dark;
+      font-family: $font-icon;
+      font-weight: 900;
+    }
+  }
+  & a {
+    color: $color-dark;
+    &:hover,
+    &:focus {
+      color: $color-light;
+    }
+  }
+}

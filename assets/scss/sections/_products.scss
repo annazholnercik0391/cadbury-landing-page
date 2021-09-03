@@ -1,0 +1,37 @@
+.products {
+  background-color: $color-section;
+  &__description {
+    font-family: $font-header;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  &__image img{
+    @include md-min {
+      display: block;
+      width: 230px;
+      height: 150px;
+      margin: 25px auto 40px;
+      align-items: center;
+      justify-content: center;
+    }
+    @include md {
+      display: block;
+      width: 180px;
+      height: 100px;
+      margin: 20px auto 51px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.product {
+  margin-bottom: 7.5px;
+  padding-top: 7.5px;
+
+  &__title {
+    text-align: center;
+  }
+  &__description {
+    text-align: center;
+  }
+}
